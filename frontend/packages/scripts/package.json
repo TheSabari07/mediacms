@@ -12,8 +12,8 @@
     "cli.js"
   ],
   "scripts": {
-    "start": "npx rollup -w -c ./config/watch.config.js",
-    "build": "npx rollup -c ./config/build.config.js",
+    "start": "node init && npx rollup -w -c ./config/watch.config.js",
+    "build": "node init && npx rollup -c ./config/build.config.js",
     "visual": "npx rollup -c ./config/visual.config.js"
   },
   "bin": {

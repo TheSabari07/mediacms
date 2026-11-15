@@ -124,7 +124,7 @@ class AutoplayToggleButton extends Button {
                 this.el().setAttribute('aria-label', this.isAutoplayEnabled ? 'Autoplay is on' : 'Autoplay is off');
                 const controlText = this.el().querySelector('.vjs-control-text');
                 if (controlText)
-                    controlText.textContent = this.isAutoplayEnabled ? 'Autoplay is on' : 'Autoplay is off';
+
             }
 
             // Fade back in
@@ -188,16 +188,16 @@ class AutoplayToggleButton extends Button {
                 // Only show tooltip for quick taps (not swipes) and only on mobile screens
                 const isMobileScreen = window.innerWidth <= 767;
                 if (touchDuration < 500 && isMobileScreen) {
-                    e.preventDefault();
-                    e.stopPropagation();
 
-                    // Show tooltip briefly
-                    button.classList.add('touch-active');
 
-                    // Hide tooltip after shorter delay on mobile
-                    setTimeout(() => {
-                        button.classList.remove('touch-active');
-                    }, 1500);
+
+
+
+
+
+
+
+
                 }
             },
             { passive: false }
